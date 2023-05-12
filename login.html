@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <script type="module" src="src/login.js"></script>
+    <script type="module" src="src/User.js"></script>
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+
+    <div id="flexWrapper">
+
+            <div id="login">
+
+            <h1>Log in to SoundLi</h1>
+            <br>
+
+            <form action="/action_page.php">
+                <label for="fname">id:</label>
+                <input type="text" id="id"><br><br>
+                <label for="lname">Password:</label>
+                <input type="password" id="password"><br><br>
+            </form>
+
+            <button onclick="login()">
+                Submit
+            </button> 
+
+            </div>
+    </div>
+
+</body>
+
+</html>

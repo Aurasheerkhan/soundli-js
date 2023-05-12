@@ -1,0 +1,24 @@
+#flexWrapper {
+
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: #3366ff;
+
+}
+
+
+#login {
+
+    background-color: #E09CF3;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+
+}
+
