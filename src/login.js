@@ -1,24 +1,47 @@
-import User from "./User";
+// import User from "./User";
 
 function login() {
-console.log ("login")
+    console.log("login")
 
-const id = document.getElementById('id').value
-const password = document.getElementById('password').value
+    const id = document.getElementById('id').value
+    const password = document.getElementById('password').value
 
-const users = localStorage.getItem("users");
+    const users = localStorage.getItem("users");
 
-const usersJson = JSON.parse(users);
+    if (!users) {
+        const newUser = new User(password, id);
+        const initUsers = [newUser] 
+        localStorage.setItem ("users", JSON.stringify(initUsers))
+        window.location.href = "homepage.html";
+        return;
+    } 
 
-const found = usersJson.find (element => element.id === id && element.password === password);
+    const usersJson = JSON.parse(users);
 
-if (found) {
-    console.log("found")
-} else {
-    const newUser = new User(password, id);
-    usersJson.push (newUser);
-    console.log("Added");
+    const found = usersJson.find(element => element.id === id && element.password === password);
+
+    if (found) {
+        console.log("found")
+        window.location.href = "homepage.html";
+    } else {
+        const newUser = new User(password, id);
+        usersJson.push(newUser);
+        localStorage.setItem ("users", JSON.stringify(usersJson))
+        console.log("Added");
+        window.location.href = "homepage.html";
+    }
+
 }
+
+class User {
+
+    #password = "";
+    #id = "";
+
+    constructor(password, id) {
+        this.password = password
+        this.id = id
+    }
 
 }
 
