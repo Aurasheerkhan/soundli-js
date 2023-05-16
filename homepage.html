@@ -14,11 +14,22 @@
 
     <div id="pageWrapper">
 
-        <div id="headlines">
-            <h1>Welcome to Soundli</h1>
+        <div id="playlistWrapper">
+
+            <h1>Welcome to SoundLi</h1>
+
+            <button id="addPlaylist" onclick="changeVisibility()" type="button"> + Add playlist </button>
+            <input type="text" id="playlistName" minlength="4" maxlength="8" size="10">
+
             <br>
-            <h2>Playlist</h2>
+
+            <div id="sendBtn">
+                <button onclick="addPlaylist()" id="sendPlaylist" type="button"> Add </button>
+            </div>
+
         </div>
+
+        <br>
 
         <div id="flexWrapper">
 
@@ -32,17 +43,10 @@
             </div>
             <div class="playlistContainer">
             </div>
-            <div class="playlistContainer">
-            </div>
-            <div class="playlistContainer">
-            </div>
-            <div class="playlistContainer">
-            </div>
-            <div class="playlistContainer">
-            </div>
+            
+        </div>
 
-        </div>
-        </div>
+    </div>
 </body>
 
 </html>
