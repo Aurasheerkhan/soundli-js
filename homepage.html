@@ -2,51 +2,63 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <script type="text/javascript" src="src/homepage.js"></script>
-    <link rel="stylesheet" href="./homepage.css">
+    <title>SoundLi Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="homePage.css">
+    <script src="/src/homePage.js"></script>
+
 </head>
+
 
 <body>
 
-    <div id="pageWrapper">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Browse All</a></li>
+                <li><a href="#">Music Genres</a></li>
+                <li><a href="#">Recently Played</a></li>
+                <li><a href="#">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div id="playlistWrapper">
-
-            <h1>Welcome to SoundLi</h1>
-
-            <button id="addPlaylist" onclick="changeVisibility()" type="button"> + Add playlist </button>
-            <input type="text" id="playlistName" minlength="4" maxlength="8" size="10">
-
-            <br>
-
-            <div id="sendBtn">
-                <button onclick="addPlaylist()" id="sendPlaylist" type="button"> Add </button>
+    <main>
+        <section id="browse-section">
+            <h2>Browse All</h2>
+            <div class="grid-container">
+                <!-- Add browse content dynamically using JavaScript -->
             </div>
+        </section>
 
-        </div>
+        <section id="genres-section">
+            <h2>Music Genres</h2>
+            <div class="grid-container">
+                <!-- Add music genres content dynamically using JavaScript -->
+            </div>
+        </section>
 
-        <br>
+        <section id="recent-section">
+            <h2>Recently Played</h2>
+            <div class="grid-container">
+                <!-- Add recently played content dynamically using JavaScript -->
+            </div>
+        </section>
 
-        <div id="flexWrapper">
+        <section id="recommendations-section">
+            <h2>Recommendations</h2>
+            <div class="grid-container">
+                <!-- Add recommendations content dynamically using JavaScript -->
+            </div>
+        </section>
+    </main>
 
-            <div class="playlistContainer">
-            </div>
-            <div class="playlistContainer">
-            </div>
-            <div class="playlistContainer">
-            </div>
-            <div class="playlistContainer">
-            </div>
-            <div class="playlistContainer">
-            </div>
-            
-        </div>
-
-    </div>
+    <footer>
+        <p>&copy; 2023 SoundLi. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
