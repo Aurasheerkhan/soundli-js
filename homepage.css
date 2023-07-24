@@ -1,10 +1,11 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: linear-gradient(to bottom, #ff9999 0%, #ffff99 100%);;
 }
 
 header {
-    background-color: #1db954;
+    background-color: #ff8c8c;
     padding: 20px;
 }
 

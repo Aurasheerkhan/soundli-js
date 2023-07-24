@@ -8,6 +8,35 @@ body {
 
 }
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: linear-gradient(to bottom, #ff9999 0%, #ffff99 100%);;
+}
+
+header {
+    background-color: #ff8c8c;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
 #flexWrapper {
 
     justify-content: center;
@@ -28,7 +57,7 @@ body {
     padding: 26px;
     max-width: 800px;
     box-shadow: 0 0 3px black;
-    margin-top: 30px;
+    margin-top: 200px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -71,4 +100,12 @@ body {
 .button:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+footer {
+    margin-top: 200px;
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
